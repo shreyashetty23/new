@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+    int arr[6]={25,30,28,55,32,29};
+   
+    int i;
+    int n=6;
+    int new;
+    printf("enter the new id:\n");
+    scanf("%d",&new);
+    for(i=0;i<n;i++)
+    {
+        if(new==arr[i])
+        {
+            printf("id is already present please enter the new id:\n");
+            printf("enter the new id:\n");
+            scanf("%d",&new);
+            printf("the new id is %d\n",new);
+            return 0;
+        }
+    }    
+
+
+    printf("the id is new=%d\n",new);
+    return 0;
+}    
