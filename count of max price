@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int arr[4]={17611,4678,17611,1111};
+    int count=0;
+    int i;
+    int n=4;
+    int max=arr[0];
+    for(i=0;i<n;i++)
+    {
+       if(arr[i]>max)
+       {
+           max=arr[i];
+       }
+    }
+    printf("max price=%d\n",max);
+    for(i=0;i<n;i++)
+    {
+        if(max==arr[i])
+        {
+            count++;
+        }
+    }
+     printf("count=%d\n",count);
+   
+return 0;
+}
