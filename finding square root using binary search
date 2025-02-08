@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int n = 16;
+    int l = 0;
+    int h = n;
+    int mid;
+
+    while (l <= h)
+    {
+        mid = (l + h) / 2;
+        if (mid * mid == n)
+        {
+            printf("%d", mid);
+            break;
+        }
+        else if (mid * mid < n)
+        {
+            l = mid + 1;
+        }
+        else
+        {
+            h = mid - 1;
+        }
+    }
+    if (l > h) {
+        printf("%d", h);  
+    }
+
+    return 0;
+}
